@@ -42,8 +42,8 @@ export default function Home() {
             <Box>
               <Heading mb={1}>Fahim Gharsa</Heading>
               <Text>
-                Salut, je suis développeur web !<br /> J'aime concevoir et coder
-                de belles choses simples.
+                Salut, je suis développeur web !<br /> J&apos;aime concevoir et
+                coder de belles choses simples.
               </Text>
             </Box>
             <Box
@@ -82,16 +82,17 @@ export default function Home() {
 
           <Text className="indent-8 mb-3 leading-7">
             Je suis actuellement en Mastère Developer Manager Full Stack à
-            l'EFREI, après avoir obtenu une Licence professionnelle en
+            l&apos;EFREI, après avoir obtenu une Licence professionnelle en
             Informatique à l'Université de Paris. Passionné par le développement
-            web et le Web Design, j'aime créer des interfaces simples et
+            web et le Web Design, j&apos;aime créer des interfaces simples et
             efficaces, tout en assurant une bonne expérience utilisateur. Je
-            m'intéresse au développement web et au Web Design. <br />
+            m&apos;intéresse au développement web et au Web Design. <br />
             <br />
-            J'ai effectué un stage en tant que développeur Web en mai 2021, et
-            depuis, c'est une merveilleuse aventure pour moi. Je suis
-            constamment en train d'apprendre. Au fil des ans, j'ai travaillé dur
-            pour améliorer mes compétences, en utilisant les outils suivants :
+            J&apos;ai effectué un stage en tant que développeur Web en mai 2021,
+            et depuis, c'est une merveilleuse aventure pour moi. Je suis
+            constamment en train d'apprendre. Au fil des ans, j&apos;ai
+            travaillé dur pour améliorer mes compétences, en utilisant les
+            outils suivants :
           </Text>
           <SimpleGrid
             columns={[3, null, 2]}
@@ -110,8 +111,8 @@ export default function Home() {
           </SimpleGrid>
 
           <Text className="mb-3 leading-7">
-            En dehors du travail, j'aime faire de la marche, dessiner et jouer
-            aux jeux vidéos.
+            En dehors du travail, j&apos;aime faire de la marche, dessiner et
+            jouer aux jeux vidéos.
           </Text>
         </Container>
       </Section>
