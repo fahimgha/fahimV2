@@ -104,8 +104,14 @@ const NavBar = () => {
       <Box className="flex justify-center">
         <LinkItem sections={sections} />
       </Box>
-      <Box className="flex flex-col content-center">
-        <Box className="flex items-center gap-10">
+      <Box
+        className="flex content-center px-2 py-3 md:px-3 md:py-2"
+        alignItems="center"
+        borderRadius="full"
+        bg="whiteAlpha.200"
+        css={{ backdropFilter: "blur(10px)" }}
+      >
+        <Box className="flex flex-col md:flex-row items-center gap-5">
           <Link
             href="https://www.linkedin.com/in/fahim-gharsa/"
             target="_blank"

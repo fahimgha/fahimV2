@@ -21,14 +21,14 @@ export const GridExperience = ({
     <Box
       as={motion.div}
       role="group"
-      className="flex row items-start mb-4 px-6 py-5 rounded-lg"
+      className="flex flex-col md:flex-row items-start mb-4 px-6 py-5 rounded-lg"
       w="100%"
       _hover={{
         background: "blackAlpha.100",
       }}
       whileHover={{ scale: 1.02 }}
     >
-      <Box className="py-1 w-24	">
+      <Box className="px-4 mt-1">
         <Text className="text-xs">{date}</Text>
       </Box>
       <Container>

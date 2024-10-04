@@ -22,7 +22,7 @@ export const GridProject = ({
     <Box
       as={motion.div}
       role="group"
-      className=" flex row mb-4 px-6 py-5 rounded-lg"
+      className=" flex flex-col-reverse md:flex-row  mb-4 px-6 py-5 rounded-lg"
       w="100%"
       _hover={{
         background: "blackAlpha.100",
@@ -30,17 +30,19 @@ export const GridProject = ({
       whileHover={{ scale: 1.02 }}
     >
       <Box
-        className="flex flex-col content-between justify-between"
+        className="flex flex-col content-between justify-between md:mb-0 "
         _groupHover={{ border: "orange.200" }}
       >
         <Image
           className="rounded-lg border-solid border-2 border-opacity-25 border-white"
           src={image}
+          layout="intrinsic"
           width={300}
           alt="Picture of the RatingSoftware website"
+          // sizes="(max-width: 768px) 50vw, 300px"
         />
       </Box>
-      <Container>
+      <Container className=" px-0 md:px-4">
         <Box>
           <Box className="flex  text-center items-center justify-between mb-4 ">
             <Text _groupHover={{ color: "orange.200" }} fontSize={18}>

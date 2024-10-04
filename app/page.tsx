@@ -15,6 +15,7 @@ import TitleSection from "@/app/ui/titleSection";
 import { RiMailFill, RiCircleFill } from "react-icons/ri";
 import neveralone from "@/public/neveralone.png";
 import tictacgobblers from "@/public/tictacgobblers.png";
+import oldportfolio from "@/public/old-portfolio.png";
 import test from "@/public/test.png";
 import { GridProject } from "./ui/project";
 import { GridExperience } from "./ui/experience";
@@ -89,7 +90,7 @@ export default function Home() {
         </Container>
       </Section>
       <Section delay={0.2}>
-        <Container mt="10" id="about" maxWidth="100%">
+        <Container mt="10" id="about">
           <TitleSection num={1}>À propos de moi</TitleSection>
 
           <Text className="indent-8 mb-3 leading-7">
@@ -188,12 +189,12 @@ export default function Home() {
               pièces de votre adversaire.
             </GridProject>
             <GridProject
-              title="Portfolio v1"
+              title="Portfolio (v1)"
               stacks={["Vuejs"]}
-              image={tictacgobblers}
+              image={oldportfolio}
               href="https://fahimgha.github.io/fahim/"
             >
-              Première version de mon portfolio.
+              Un ancien site portfolio réalisé avec Vue.js
             </GridProject>
           </SimpleGrid>
           <Box display="flex" justifyContent="center" my={4}>
