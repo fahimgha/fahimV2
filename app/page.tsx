@@ -29,22 +29,50 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <Container
+      className="flex  flex-col items-center justify-center"
+      maxWidth="100%"
+      width="650px"
+    >
       <NavBar />
       <Section delay={0.1}>
-        <Container id="home" className="mt-24 mb-19">
+        <Container id="home" className="mt-24 mb-19" maxWidth="100%">
           <Box
             display="flex"
-            justifyContent="space-between"
-            alignItems="center"
-            gap={16}
+            flexDirection="row" // Aligne les éléments horizontalement
+            justifyContent="space-around" // Espace autour des éléments
+            alignItems="center" // Centre les éléments verticalement
+            height="30vh" // Prend 50% de la hauteur de l'écran
+            width="100%" // Prend toute la largeur disponible
+            gap={10} // Espace entre le texte et la box contenant l'image
           >
-            <Box>
+            <Box
+              className="flex flex-col"
+              justifyContent="center"
+              alignContent="space-around"
+              gap={4} // Espace entre le Heading et le Text
+            >
               <Heading mb={1}>Fahim Gharsa</Heading>
               <Text>
                 Salut, je suis développeur web !<br /> J&apos;aime concevoir et
                 coder de belles choses simples.
               </Text>
+              <Box className="flex mt-4">
+                <Link href="mailto:fahimgharsa@protonmail.com">
+                  <Button
+                    leftIcon={<RiMailFill />}
+                    fontSize="16px"
+                    height="35px"
+                    colorScheme="teal"
+                    rounded="full"
+                    variant="subtle"
+                    color="orange.200"
+                    bgColor="rgba(255, 165, 0, 0.1)"
+                  >
+                    Dites bonjour !
+                  </Button>
+                </Link>
+              </Box>
             </Box>
             <Box
               rounded="full"
@@ -58,26 +86,10 @@ export default function Home() {
               <Image src="/me.png" width={120} height={120} alt="me" />
             </Box>
           </Box>
-          <Box className="flex mt-4">
-            <Link href="mailto:fahimgharsa@protonmail.com">
-              <Button
-                leftIcon={<RiMailFill />}
-                fontSize="16px"
-                height="35px"
-                colorScheme="teal"
-                rounded="full"
-                variant="subtle"
-                color="orange.200"
-                bgColor="rgba(255, 165, 0, 0.1)"
-              >
-                Dites bonjour !
-              </Button>
-            </Link>
-          </Box>
         </Container>
       </Section>
       <Section delay={0.2}>
-        <Container mt="10" id="about">
+        <Container mt="10" id="about" maxWidth="100%">
           <TitleSection num={1}>À propos de moi</TitleSection>
 
           <Text className="indent-8 mb-3 leading-7">
@@ -117,7 +129,7 @@ export default function Home() {
         </Container>
       </Section>
       <Section delay={0.3}>
-        <Container id="experience">
+        <Container id="experience" maxWidth="100%">
           <TitleSection num={2}>Mes Experiences</TitleSection>
           <SimpleGrid columns={[1]}>
             <GridExperience
@@ -139,7 +151,11 @@ export default function Home() {
         </Container>
       </Section>
       <Section delay={0.4}>
-        <Container id="project">
+        <Container
+          className="flex flex-col justify-center"
+          id="project"
+          maxWidth="100%"
+        >
           <TitleSection num={3}>Mes Projets</TitleSection>
           {/* <SimpleGrid columns={[1, 1, 2]}></SimpleGrid> */}
           <SimpleGrid columns={[1]}>
@@ -171,12 +187,38 @@ export default function Home() {
               Un jeu comme Tic-Tac-Toe dans lequel vous pouvez engloutir les
               pièces de votre adversaire.
             </GridProject>
+            <GridProject
+              title="Portfolio v1"
+              stacks={["Vuejs"]}
+              image={tictacgobblers}
+              href="https://fahimgha.github.io/fahim/"
+            >
+              Première version de mon portfolio.
+            </GridProject>
           </SimpleGrid>
+          <Box display="flex" justifyContent="center" my={4}>
+            <Link href="https://github.com/fahimgha">
+              <Button
+                display="inline-flex"
+                textAlign="center"
+                fontSize="16px"
+                height="35px"
+                colorScheme="teal"
+                rounded="full"
+                variant="subtle"
+                color="orange.200"
+                bgColor="rgba(255, 165, 0, 0.1)"
+                text-decoration="none"
+              >
+                Voir plus de projets
+              </Button>
+            </Link>
+          </Box>
         </Container>
       </Section>
       <footer>
         Built and designed by Fahim Gharsa. All rights reserved. ©
       </footer>
-    </main>
+    </Container>
   );
 }
