@@ -1,7 +1,7 @@
 "use client";
 import { Box, Text, Link, Tag, Container } from "@chakra-ui/react";
 import Image from "next/image";
-import { RiGithubLine } from "react-icons/ri";
+import { RiGithubLine, RiLinksFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 interface GridProjetsProps {
   title: string;
@@ -18,6 +18,7 @@ export const GridProject = ({
   stacks,
   href,
 }: GridProjetsProps) => {
+  const isGithubLink = href.includes("github.com");
   return (
     <Box
       as={motion.div}
@@ -39,7 +40,6 @@ export const GridProject = ({
           layout="intrinsic"
           width={300}
           alt="Picture of the RatingSoftware website"
-          // sizes="(max-width: 768px) 50vw, 300px"
         />
       </Box>
       <Container className=" px-0 md:px-4">
@@ -55,7 +55,11 @@ export const GridProject = ({
               href={href}
               target="_blank"
             >
-              <RiGithubLine size={20} />
+              {isGithubLink ? (
+                <RiGithubLine size={20} />
+              ) : (
+                <RiLinksFill size={20} />
+              )}
             </Link>
           </Box>
           <Text fontSize={14} mb={4}>
