@@ -93,13 +93,11 @@ export default function Home() {
         <Container mt="10" id="about">
           <TitleSection num={1}>À propos de moi</TitleSection>
 
-          <Text className="indent-8 mb-3 leading-7">
-            Je suis actuellement en Mastère Developer Manager Full Stack à
-            l&apos;EFREI, après avoir obtenu une Licence professionnelle en
-            Informatique à l'Université de Paris. Passionné par le développement
-            web et le Web Design, j&apos;aime créer des interfaces simples et
-            efficaces, tout en assurant une bonne expérience utilisateur. Je
-            m&apos;intéresse au développement web et au Web Design. <br />
+          <Text className=" mb-3 leading-7">
+            Passionné par le développement web et le Web Design, j&apos;aime
+            créer des interfaces simples et efficaces, tout en assurant une
+            bonne expérience utilisateur. Je m&apos;intéresse au développement
+            web et au Web Design. <br />
             <br />
             J&apos;ai effectué un stage en tant que développeur Web en mai 2021,
             et depuis, c'est une merveilleuse aventure pour moi. Je suis
