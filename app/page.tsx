@@ -90,10 +90,10 @@ export default function Home() {
         </Container>
       </Section>
       <Section delay={0.2}>
-        <Container mt="10" id="about">
+        <Container mt="10" maxWidth="100%" id="about">
           <TitleSection num={1}>À propos de moi</TitleSection>
 
-          <Text className=" mb-3 leading-7">
+          <Text className="indent-8 mb-3 leading-7">
             Passionné par le développement web et le Web Design, j&apos;aime
             créer des interfaces simples et efficaces, tout en assurant une
             bonne expérience utilisateur. Je m&apos;intéresse au développement
